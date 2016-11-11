@@ -1,2 +1,13 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+
+<table>
+  <% @aliases.each do |al| %> 
+    <tr>
+      <td>
+        <h2> <%= al.alias.upcase %> </h2>
+      </td>
+      <td>
+        <em> <%= al.explication %> </em> 
+      </td>
+    </tr>
+  <% end %>
+</table>
